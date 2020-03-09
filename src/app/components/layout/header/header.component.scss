@@ -1,12 +1,12 @@
-@import './../../../../styles';
+@import "./../../../../styles";
 
 mat-toolbar {
   font-family: $base-font;
+  font-weight: bold;
   position: fixed;
   z-index: 999;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   border-bottom: 1px solid black;
   transition: font-size 0.1s linear;
 
@@ -14,8 +14,12 @@ mat-toolbar {
     font-size: 0.8rem;
   }
 
-  img {
-    width: 30px;
+  a {
     height: 30px;
+    
+    img {
+      width: 30px;
+      height: 30px;
+    }
   }
 }
