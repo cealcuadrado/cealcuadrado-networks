@@ -1,8 +1,6 @@
-<header>
-  <mat-toolbar color="primary">
-      <a href="#">
-        <img src="assets/img/ce2profile.png" />
-      </a>
-      <span>{{title | uppercase}}</span>
-  </mat-toolbar>
-</header>
+<mat-toolbar color="primary">
+  <a [href]="url" target="_blank" [title]="urlTitle">
+    <img src="assets/img/ce2profile.png" alt="Imagen de perfil"/>
+  </a>
+  <span>{{title | uppercase}}</span>
+</mat-toolbar>
