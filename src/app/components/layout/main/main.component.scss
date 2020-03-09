@@ -1,0 +1,53 @@
+@import '../../../app.component.scss';
+
+mat-grid-list {
+  mat-grid-tile {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    transition: font-size 0.1s linear;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $base-color;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 0.8rem;
+    }
+
+    a {
+      display: block;
+      width:80%;
+      color: white;
+      background-color: red;
+      text-decoration: none;
+
+      h1 {
+        background-color: $base-color;
+        padding: 1rem;
+        margin:0;
+        text-align: center;
+        transition: background-color 0.1s linear;
+
+        hr {
+          @media screen and (max-width: 767px) {
+            display: none;
+          }
+        }
+
+        small {
+          @media screen and (max-width: 767px) {
+            display: none;
+          }
+        }
+      }
+
+      &:hover {
+        h1 {
+          background-color: #333;
+        }
+      }
+    }
+
+  }
+}
