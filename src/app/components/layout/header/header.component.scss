@@ -1,4 +1,21 @@
+@import './../../../../styles';
+
 mat-toolbar {
+  font-family: $base-font;
+  position: fixed;
+  z-index: 999;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  transition: font-size 0.1s linear;
+
+  @media screen and (max-width: 767px) {
+    font-size: 0.8rem;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
 }

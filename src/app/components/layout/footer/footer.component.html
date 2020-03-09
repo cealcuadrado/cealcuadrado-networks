@@ -1,1 +1,15 @@
-<p>&#169; (year) {{author}}</p>
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <p>
+      <a href="#" *ngFor="let social of socials" target="_blank">
+        <i class="fab fa-fw" [ngClass]="social.icon">
+        </i>
+      </a>
+    </p>
+    <p>&#169; {{year}} {{author}}</p>
+  </mat-toolbar-row>
+  <mat-toolbar-row>
+    <p><i class="fas fa-envelope fa-fw"></i> {{email}}</p>
+  </mat-toolbar-row>
+</mat-toolbar>
+

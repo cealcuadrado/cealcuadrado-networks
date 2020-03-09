@@ -1,3 +1,32 @@
-p {
-  text-align: center;
+@import '../../../../styles';
+
+mat-toolbar {
+  font-family: $base-font;
+  border-top: 1px solid black;
+  transition: font-size 0.1s linear;
+
+  @media screen and (max-width: 767px) {
+    font-size: 0.8rem;
+  }
+
+  mat-toolbar-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      a {
+        color: white;
+        transition: opacity 0.1s linear;
+
+        &:not(:last-child) {
+          margin-right: 0.5rem;
+        }
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
 }

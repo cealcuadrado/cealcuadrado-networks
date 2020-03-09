@@ -1,0 +1,11 @@
+@import '../styles';
+
+.content {
+  animation: fadeIn 1s;
+  background-color: $base-color;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+}
