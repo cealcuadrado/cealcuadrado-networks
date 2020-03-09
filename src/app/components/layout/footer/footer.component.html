@@ -1,15 +1,17 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <p>
-      <a href="#" *ngFor="let social of socials" target="_blank">
+    <span>
+      <a *ngFor="let social of socials" [href]="social.url" target="_blank" [title]="social.name">
         <i class="fab fa-fw" [ngClass]="social.icon">
         </i>
       </a>
-    </p>
-    <p>&#169; {{year}} {{author}}</p>
+    </span>
+    <span>&#169; {{year}} {{author}}</span>
   </mat-toolbar-row>
   <mat-toolbar-row>
-    <p><i class="fas fa-envelope fa-fw"></i> {{email}}</p>
+    <span>
+      <i class="fas fa-envelope fa-fw"></i> {{email}}
+    </span>
   </mat-toolbar-row>
 </mat-toolbar>
 
