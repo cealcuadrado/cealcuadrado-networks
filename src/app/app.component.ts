@@ -10,4 +10,5 @@ export class AppComponent {
   title = basicData.title;
   author = basicData.author;
   email = basicData.email;
+  url = basicData.url;
 }

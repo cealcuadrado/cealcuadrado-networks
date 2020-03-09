@@ -1,6 +1,6 @@
 <mat-grid-list cols="1" rowHeight="100vh">
   <mat-grid-tile *ngFor="let blog of blogs" [ngStyle]="{'background-image':'url(' + blog.imageUrl + ')', 'background-color':'steelblue'}">
-    <a href="#" target="_blank">
+    <a [href]="blog.url" target="_blank">
       <h1>
         {{blog.title | uppercase}}<hr />
         <small>{{blog.description}}</small>
