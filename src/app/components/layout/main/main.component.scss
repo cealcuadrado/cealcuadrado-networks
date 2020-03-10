@@ -29,7 +29,7 @@ mat-grid-list {
         text-align: center;
         transition: background-color 0.1s linear;
 
-        hr {
+        br {
           @media screen and (max-width: 767px) {
             display: none;
           }
