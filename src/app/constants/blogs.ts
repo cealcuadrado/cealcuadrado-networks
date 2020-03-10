@@ -9,7 +9,7 @@ export const blogs: Blog[] = [
          },
          {
            title: 'Al Cuadrado en Detalle',
-           description: 'En este blog se escribe en extenso',
+           description: 'En este blog, se escribe en extenso',
            url: 'https://alcuadradoendetalle.tumblr.com',
            imageUrl: 'assets/img/ce2endetalle.png'
          },
